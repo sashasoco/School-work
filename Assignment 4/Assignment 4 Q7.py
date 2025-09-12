@@ -15,6 +15,7 @@ while (Num!=int):
             Odd_Num+=1
     elif(Num.isalpha and Num=="q"):
         print(Even_Num,Odd_Num)
+        break
     
     
         

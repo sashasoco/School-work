@@ -1,0 +1,6 @@
+Your code is very good, in program 4 line 9, you don't need to use number3 = int(number3) as number3 was
+created by adding two ints. Similar on Question 8
+
+Program 7, line 5, I would be careful about using an int as the price is seldom an integer input. 
+
+Could you upload the code for programs 6 and 7 on page 174

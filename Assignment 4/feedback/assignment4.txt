@@ -1,0 +1,28 @@
+For q7 on line 8 the comparison will always be true. (short of writing Num = int on line 4) 
+
+Instead of setting up a comparison that can't fail it is more common to 
+write :
+
+while True:
+
+and then the break statement will get us out when necessary.
+ 
+Your conditional check on line 16. Num.isalpha is not doing anything because it 
+should be Num.isalpha().
+You won't get an error because all no zero values are True in python for 
+Booleans. 
+Your code is the same as writing:
+
+elif(True and Num == 'q')
+
+changing it to Num.isalpha() will make it run as intended but the isalpha() check is unnecessary
+as 'q' is a letter and so if the input is not alphabetical Num=='q' will fail anyways.
+
+Your code is very good, I am just mentioning these as an aside.
+
+
+Question 8
+==============
+
+If I put in 0 or 1 it should return 1. Apart from that it's very good.
+

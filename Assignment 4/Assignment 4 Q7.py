@@ -5,7 +5,7 @@ Num=1
 
 Even_Num=0
 Odd_Num=0
-while (Num!=int):
+while True:
     Num=(input("Give me a number"))
     if(Num.isdigit()):
         Num=int(Num)
@@ -13,9 +13,10 @@ while (Num!=int):
             Even_Num+=1
         elif Num%2==1:
             Odd_Num+=1
-    elif(Num.isalpha and Num=="q"):
+    elif(Num=="q"):
         print(Even_Num,Odd_Num)
         break
     
     
         
+

@@ -4,7 +4,7 @@
 Answer=1
 Num=int(input("Give me a number"))
 
-if(Num<=1):
+if(Num<0):
     print("Has to be a positive number")
 
 else:
@@ -13,4 +13,5 @@ else:
         Num-=1
 print(Answer)
     
+
     

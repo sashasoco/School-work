@@ -1,0 +1,16 @@
+#Alexander Socolovsky
+#10 October 2025
+#Assignment 8 Q16
+list=[]
+
+N=int(input("How many numbers do you want to insert?"))
+
+for i in range(N):
+    Num=int(input("Give me a number"))
+    
+    list.append(Num)
+
+list.sort()
+Num_2Max=list[-2]
+
+print("Your second highest number is",Num_2Max)

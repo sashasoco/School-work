@@ -64,17 +64,28 @@ Result_No_0=Result.strip("0")
 Result_No_0+="0"*Count_0_End
 
 if len(Result_No_0)<7:
+    while len(Result)<7:
+        Result="0"+Result
+        
     Result="0"+Result
 
 elif len(Result_No_0)<10:
+    while len(Result)<11:
+        Result= "0"+Result
+        
     Result="110"+Result[0:5]+","+"10"+Result[5:]
 
-elif len(Result_No_0)<15:
+elif len(Result_No_0)<16:
+    while len(Result)<16:
+        Result= "0"+ Result
+        
     Result="1110"+Result[0:4]+","+"10"+Result[4:10]+","+"10"+Result[10:]
 
 else:
-    Result="1110"+Result[0:3]+","+"10"+Result[3:9]+","+"10"+Result[9:15]+","+"10"+Result[15:]
-
+    while len(Result)<21:
+        Result="0"+Result
+        
+    Result="1110"+Result[0:4]+","+"10"+Result[3:9]+","+"10"+Result[9:15]+","+"10"+Result[15:]
 
     
 print(Result)
